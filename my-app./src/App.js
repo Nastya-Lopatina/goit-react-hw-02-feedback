@@ -51,11 +51,11 @@ countTotalFeedback = () => {
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={Object.keys(this.state)}
-          onLeaveFeedback={this.addFeedback}
-        />
+          onLeaveFeedback={this.addFeedback}/>
       </Section>
 
       <Section title={'Statistics'}>
+        
         { total === 0 ?(
           <Notification message="No feedback given" />
         ) : (
